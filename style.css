@@ -59,6 +59,15 @@ video {
     }
 }
 
+@media (max-width: 1000px) {
+    .bouton_menu {
+        top: 50%; /* Place le bouton plus haut sur mobile */
+    }
+
+    .menu_text {
+        top: 35%; /* Place le deuxième bouton plus bas sur mobile */
+    }
+}
 .bouton_menu2 {
     position: absolute;
     margin-top: 0%;
