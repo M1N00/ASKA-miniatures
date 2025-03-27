@@ -62,6 +62,7 @@ video {
 @media (max-width: 1000px) {
     .bouton_menu {
         top: 50%; /* Place le bouton plus haut sur mobile */
+        background-color: rgb(165, 0, 0);
     }
 
     .menu_text {
