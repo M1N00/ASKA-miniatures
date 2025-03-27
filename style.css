@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Seasons&display=swap');
+
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #3a3a3a;
+
+    color: white;
+
+    text-align: center;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+video {
+    min-height: 100%;
+}
+.bouton_menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: rgb(0, 165, 5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    opacity: 0;
+    animation: apparaitre 1.5s ease-in-out forwards;
+
+
+}
+.bouton_menu:hover {
+    background-color: rgb(0, 201, 7);
+    cursor: pointer;
+}
+
+.menu_text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    animation: apparaitre 1.5s ease-in-out forwards;
+
+}
+@keyframes apparaitre {
+    to {
+        opacity: 2;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+.bouton_menu2 {
+    position: absolute;
+    margin-top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: rgb(0, 165, 5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+}
+.bouton_menu2:hover {
+    background-color: rgb(0, 201, 7);
+    cursor: pointer;
+}
+
+.menu_text2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    animation: apparaitre 1.5s ease-in-out forwards;
+
+}
