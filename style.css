@@ -55,11 +55,29 @@ body {
     cursor: pointer;
 }
 
-.Chat_vente {
-    display: inline-block; /* Ensure inline display */
-    text-align: center;
-    margin: 10px;
-    vertical-align: top; /* Align to the top */
+@media (max-width: 1370px){
+    .Chat_vente-container {
+        display: flex;
+        overflow-x: auto; /* Permet le défilement horizontal */
+        gap: 10px; /* Espacement entre les éléments */
+        padding: 10px; /* Ajoute un peu d'espace autour */
+        scroll-snap-type: x mandatory; /* Active le snap scrolling */
+    }
+    
+    .Chat_vente {
+        scroll-snap-align: start; /* Aligne chaque élément au début lors du défilement */
+        flex: 0 0 auto; /* Empêche les éléments de se réduire */
+    }
+    
+}
+
+@media (min-width: 1370px) {
+    .Chat_vente {
+        display: inline-block; /* Ensure inline display */
+        text-align: center;
+        margin: 10px;
+        vertical-align: top; /* Align to the top */
+    }
 }
 .Chat_vente img {
     border: 2px solid #ffffff;
@@ -82,6 +100,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 25px;
 }
 
 
