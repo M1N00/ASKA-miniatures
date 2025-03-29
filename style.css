@@ -89,28 +89,37 @@ body {
 
 }
 
-.TémoignageContainer{
-    display: flex; 
-    gap: 10px; 
-    padding: 10px; 
-    height: 50vh; 
-    justify-content: center; 
-    align-items: center;
+.TémoignageContainer {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px; /* Space between items */
+    padding: 10px; /* Add padding around */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    height: auto; /* Adjust height dynamically */
+    justify-content: center; /* Center items when no scrollbar */
+    align-items: center; /* Center items vertically */
 }
 
+@media (max-width: 750px) {
+    .TémoignageContainer {
+        justify-content: flex-start; /* Align items to the start when scrolling */
+    }
+}
+
+
 .Témoignage {
+    scroll-snap-align: start; /* Align each item at the start during scrolling */
+    flex: 0 0 auto; /* Prevent items from shrinking */
     background-color: #e5c76e;
     border: 10px solid #000000;
     border-radius: 10px;
     width: 25vh;
-
     height: 45vh;
-    font-size: large;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 25px;
 }
 
 
