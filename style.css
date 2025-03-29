@@ -82,10 +82,10 @@ body {
 .Chat_vente img {
     border: 2px solid #ffffff;
     border-radius: 10px;
-    width: 50vh;
+    width: 100%; /* Laisse l'image s'adapter */
+    max-width: 50vh; /* Limite la taille maximale */
     height: auto;
-    max-width: 100%;
-    height: auto;
+
 }
 
 .Témoignage {
