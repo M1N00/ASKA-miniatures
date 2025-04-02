@@ -186,7 +186,50 @@ body {
     text-align: center;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Aligne verticalement les éléments */
+    gap: 20px; /* Espacement horizontal entre les éléments */
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px; /* Ajoute un peu d'espace autour */
+    flex-wrap: wrap; /* Permet le retour à la ligne sur mobile */
+}
 
+.footer-image {
+    width: 60px;
+    height: auto;
+}
+.footer-image-résaux{
+    width: 150px;
+    height: auto;
+}
+.footer-text {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+    flex: 1; /* Permet aux textes de s'adapter */
+}
+
+/* Responsive design pour mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        justify-content: center; /* Centre les éléments sur mobile */
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 14px; /* Réduit la taille de la police sur mobile */
+    }
+
+    .footer-image {
+        width: 60px; /* Réduit la taille des images sur mobile */
+    }
+
+    .footer-image-résaux {
+        width: 100px; /* Réduit la taille des images sur mobile */
+    }
+}
 
 
 
