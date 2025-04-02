@@ -13,5 +13,5 @@ container.addEventListener('scroll', () => {
 const AproposButton = document.getElementById('APROPOS');
 
 AproposButton.addEventListener('click', () => {
-    window.location.href = 'Pages/Apropos.html';
+    window.location.href = 'Pages/Apropos/index.html';
 });
