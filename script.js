@@ -16,3 +16,20 @@ AproposButton.addEventListener('click', () => {
     window.location.href = 'Pages/Apropos/Apropos.html';
     
 });
+
+const ProductButton1 = document.getElementById('ProduitVoirPlus1');
+const ProductButton2 = document.getElementById('ProduitVoirPlus2');
+const ProductButton3 = document.getElementById('ProduitVoirPlus3');
+ProductButton1.addEventListener('click', () => {
+    window.location.href = 'Pages/Produit/Produit.html';
+    
+});
+
+ProductButton2.addEventListener('click', () => {
+    window.location.href = 'Pages/Produit/Produit.html';
+    
+});
+ProductButton3.addEventListener('click', () => {
+    window.location.href = 'Pages/Produit/Produit.html';
+    
+});

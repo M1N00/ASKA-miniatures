@@ -145,8 +145,8 @@ body {
     }
 }
 .Chat_vente img {
-    border: 2px solid #ffffff;
-    border-radius: 10px;
+
+    border-radius: 40px;
     width: 100%; /* Laisse l'image s'adapter */
     max-width: 50vh; /* Limite la taille maximale */
     height: auto;
