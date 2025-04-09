@@ -33,3 +33,4 @@ ProductButton3.addEventListener('click', () => {
     window.location.href = 'Pages/Produit/Produit.html';
     
 });
+
