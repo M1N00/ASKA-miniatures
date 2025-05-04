@@ -135,3 +135,26 @@ body {
     z-index: 1000; /* Ensure it stays above other elements */
     font-size: 25px;
 }
+
+.Image1, .Image2 {
+    width: 70vh; /* Ajuste la largeur des images */
+    max-width: 80%;
+    height: auto;
+}
+
+.Image1 {
+    align-self: flex-start; /* Aligne l'image au bord gauche */
+    margin-left: 0; /* Assure qu'elle touche le bord gauche */
+}
+
+.Image2 {
+    align-self: flex-end; /* Aligne l'image au bord droit */
+    margin-right: 0; /* Assure qu'elle touche le bord droit */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Place les éléments en colonne */
+    align-items: stretch; /* Étire les éléments pour respecter les bords */
+    gap: 20px; /* Ajoute un espacement entre les images */
+}
